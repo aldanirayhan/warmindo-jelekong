@@ -141,6 +141,41 @@ nav {
     display: none;
 }
 
+.header-container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.header-image img {
+    max-width: 600px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header-content h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.header-content h1 span {
+    color: var(--primary-color);
+}
+
+.header-content .section-description {
+    margin-bottom: 2rem;
+}
+
+.header-btn {
+    text-align: center;
+}
+
 @media (width > 768px) {
     nav {
         position: static;
@@ -192,5 +227,20 @@ nav {
         padding: 8px 10px;
         font-size: 1.5rem;
         border-radius: 100%;
+    }
+
+    .header-container {
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+    }
+
+    .header-content h1,
+    .header-content .section-description,
+    .header-btn {
+        text-align: left;
+    }
+
+    .header-image {
+        grid-area: 1/2;
     }
 }
