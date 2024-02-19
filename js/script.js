@@ -22,6 +22,7 @@ const scrollRevealOption = {
     duration: 1000,
 }
 
+// Menu Section
 ScrollReveal().reveal(".header-image img", {
     ...scrollRevealOption,
     origin: "right",
@@ -39,6 +40,28 @@ ScrollReveal().reveal(".header-content .section-description", {
 })
 
 ScrollReveal().reveal(".header-content .header-btn", {
+    ...scrollRevealOption,
+    delay: "1500",
+})
+
+// Explore Section
+ScrollReveal().reveal(".explore-image img", {
+    ...scrollRevealOption,
+    origin: "left",
+})
+
+ScrollReveal().reveal(".explore-content .section-header", {
+    ...scrollRevealOption,
+    origin: "top",
+    delay: "500",
+})
+
+ScrollReveal().reveal(".explore-content .section-description", {
+    ...scrollRevealOption,
+    delay: "1000",
+})
+
+ScrollReveal().reveal(".explore-content .explore-btn", {
     ...scrollRevealOption,
     delay: "1500",
 })

@@ -238,6 +238,26 @@ nav {
     color: var(--text-dark);
 }
 
+.explore-container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.explore-image img {
+    max-width: 400px;
+    margin-inline: auto;
+    filter: drop-shadow(0 0 50px rgba(14, 141, 169, 0.3));
+}
+
+.explore-content .section-description {
+    margin-bottom: 2rem;
+}
+
+.explore-btn {
+    text-align: center;
+}
+
 @media (width > 540px) {
     .special-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -314,6 +334,20 @@ nav {
 
     .special-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .explore-container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .explore-content .section-header {
+        max-width: 500px;
+    }
+
+    .explore-content :is(.section-header, .section-description),
+    .explore-btn {
+        text-align: left;
     }
 }
 
