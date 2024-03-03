@@ -100,3 +100,12 @@ ScrollReveal().reveal(".chef-list li", {
     delay: 1500,
     interval: 250,
 })
+
+// Swiper
+const swiper = new Swiper(".swiper", {
+    loop: true,
+
+    pagination: {
+        el: ".swiper-pagination",
+    },
+})
