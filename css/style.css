@@ -510,6 +510,14 @@ nav {
     text-align: center;
 }
 
+.footer-bar a {
+    color: var(--text-light);
+}
+
+.footer-bar a:hover {
+    color: var(--primary-color);
+}
+
 @media (width > 540px) {
     .special-grid {
         grid-template-columns: repeat(2, 1fr);

@@ -72,7 +72,6 @@ ScrollReveal().reveal(".special-card", {
     interval: 500,
 })
 
-// Banner Section
 ScrollReveal().reveal(".banner-card", {
     ...scrollRevealOption,
     interval: 500,
@@ -99,6 +98,17 @@ ScrollReveal().reveal(".chef-list li", {
     ...scrollRevealOption,
     delay: 1500,
     interval: 250,
+})
+
+// Testimoni Pelanggan
+ScrollReveal().reveal(".client-container", {
+    ...scrollRevealOption,
+    interval: 500,
+})
+
+ScrollReveal().reveal(".client-swiper", {
+    ...scrollRevealOption,
+    interval: 500,
 })
 
 // Swiper
