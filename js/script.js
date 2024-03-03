@@ -65,3 +65,8 @@ ScrollReveal().reveal(".explore-content .explore-btn", {
     ...scrollRevealOption,
     delay: "1500",
 })
+
+ScrollReveal().reveal(".banner-card", {
+    ...scrollRevealOption,
+    interval: 500,
+})
