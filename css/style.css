@@ -341,13 +341,13 @@ nav {
     overflow: hidden;
 }
 
-.chef-bg {
+/* .chef-bg {
     position: absolute;
     z-index: -1;
     max-width: 275px;
     left: -4rem;
     bottom: -2rem;
-}
+} */
 
 .chef-container {
     display: grid;
@@ -503,9 +503,9 @@ nav {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .chef-bg {
+    /* .chef-bg {
         max-width: 300px;
-    }
+    } */
 
     .chef-container {
         grid-template-columns: repeat(2, 1fr);
@@ -537,5 +537,14 @@ nav {
 
     .banner-card {
         padding: 2rem;
+    }
+
+    .chef-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chef-image {
+        grid-area: 1/2;
     }
 }
